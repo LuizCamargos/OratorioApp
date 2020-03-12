@@ -19,6 +19,16 @@ class _CardCriancaChamadaState extends State<CardCriancaChamada> {
           fit: BoxFit.fitHeight,
           height: 50,
           width: 50,
+          loadingBuilder: (BuildContext context, Widget child,
+              ImageChunkEvent loadingProgress) {
+            if (loadingProgress == null) return child;
+            return CircularProgressIndicator(
+              value: loadingProgress.expectedTotalBytes != null
+                  ? loadingProgress.cumulativeBytesLoaded /
+                      loadingProgress.expectedTotalBytes
+                  : null,
+            );
+          },
         ),
       ),
       title: Text(this.widget.nome),
