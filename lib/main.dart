@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:oratorioapp/telaPesquisa.dart';
 import 'muralDeFotos.dart';
 import 'telaChamada.dart';
 import 'TelasTestes.dart';
@@ -28,10 +29,10 @@ class _TelaBaseState extends State<TelaBase> {
     "CONFIGURACOES"
   ];
 
-  final MuralDeFotos _tela01 = new MuralDeFotos();
-  final Tela02 _tela02 = new Tela02();
+  final Tela02 _tela01 = new Tela02();
+  final MuralDeFotos _tela02 = new MuralDeFotos();
   final TelaChamada _tela03 = new TelaChamada();
-  final Tela04 _tela04 = new Tela04();
+  final TelaPesquisa _tela04 = new TelaPesquisa();
   final Tela05 _tela05 = new Tela05();
 
   Widget _pageChooser(page) {
@@ -92,15 +93,15 @@ class _TelaBaseState extends State<TelaBase> {
         index: iTela,
         animationDuration: Duration(milliseconds: 100),
         height: 50,
-        color: Colors.indigoAccent,
+        color: Color(0xffECE7E3),
         backgroundColor: Colors.white,
-        buttonBackgroundColor: Colors.indigoAccent,
+        buttonBackgroundColor: Color(0xffECE7E3),
         items: <Widget>[
-          Icon(Icons.ac_unit, color: Colors.white),
-          Icon(Icons.access_alarm, color: Colors.white),
-          Icon(Icons.accessibility, color: Colors.white),
-          Icon(Icons.airplanemode_active, color: Colors.white),
-          Icon(Icons.arrow_right, color: Colors.white)
+          Icon(Icons.assessment, color: Colors.black54),
+          Icon(Icons.view_quilt, color: Colors.black54),
+          Icon(Icons.class_, color: Colors.black54),
+          Icon(Icons.search, color: Colors.black54),
+          Icon(Icons.all_inclusive, color: Colors.black54)
         ],
         onTap: (index) {
           setState(() {

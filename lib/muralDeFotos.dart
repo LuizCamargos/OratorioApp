@@ -6,7 +6,7 @@ class MuralDeFotos extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemBuilder: (BuildContext ctxt, int index) => CardMural(),
-      itemCount: 10,
+      itemCount: 3,
     );
   }
 }

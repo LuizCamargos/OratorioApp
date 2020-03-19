@@ -41,14 +41,14 @@ class _CardCriancaChamadaState extends State<CardCriancaChamada> {
               'assets/images/presente.png',
               height: 15,
             ),
-            onPressed: () => print("Presente"),
+            onPressed: () => print("${this.widget.nome} Presente"),
           ),
           IconButton(
             icon: Image.asset(
               'assets/images/ausente.png',
               height: 15,
             ),
-            onPressed: () => print("Ausente"),
+            onPressed: () => print("${this.widget.nome} Ausente"),
           ),
         ],
       ),
