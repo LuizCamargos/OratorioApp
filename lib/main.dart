@@ -29,7 +29,7 @@ class _TelaBaseState extends State<TelaBase> {
     "CONFIGURACOES"
   ];
 
-  final Tela02 _tela01 = new Tela02();
+  final Tela01 _tela01 = new Tela01();
   final MuralDeFotos _tela02 = new MuralDeFotos();
   final TelaChamada _tela03 = new TelaChamada();
   final TelaPesquisa _tela04 = new TelaPesquisa();
